@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-class TestController {
+class EnvironmentVariableController {
 
     @Value("\${SOME_ENV_VAR}")
     var envVar: String = ""
