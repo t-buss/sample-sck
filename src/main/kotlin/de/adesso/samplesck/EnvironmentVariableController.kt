@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController
 class EnvironmentVariableController {
 
     @Value("\${SOME_ENV_VAR}")
-    var envVar: String = ""
+    lateinit var envVar: String
 
     @GetMapping("/getenv")
     fun getEnvironmentVariable() = this.envVar
